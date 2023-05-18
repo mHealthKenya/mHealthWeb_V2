@@ -35,15 +35,15 @@ const AboutSectionOne = () => {
               >
                 <div className="mx-[-12px] flex flex-wrap">
                   <div className="w-full px-3 sm:w-1/2 lg:w-full xl:w-1/2">
-                    <List text="Human Health" />
-                    <List text="Animal Health" />
-                    <List text="Agriculture" />
+                    <List text="Honesty & Integrity" />
+                    <List text="Ethical & Professional" />
+                    <List text="Accountability & Leadership" />
                   </div>
 
                   <div className="w-full px-3 sm:w-1/2 lg:w-full xl:w-1/2">
-                    <List text="" />
-                    <List text="Rich documentation" />
-                    <List text="Developer friendly" />
+                    <List text="Learning & Innovative" />
+                    <List text="Teamwork & Inclusiveness" />
+                    <List text="Humane & Diverse" />
                   </div>
                 </div>
               </div>
