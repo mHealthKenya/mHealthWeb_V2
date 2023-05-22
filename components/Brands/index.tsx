@@ -7,31 +7,31 @@ const brandsData: Brand[] = [
     id: 1,
     name: "UIdeck",
     href: "https://uideck.com",
-    image: "/images/brands/uideck.svg",
+    image: "/images/partners/ifa.png",
   },
   {
     id: 2,
     name: "Tailgrids",
     href: "https://tailgrids.com",
-    image: "/images/brands/tailgrids.svg",
+    image: "/images/partners/kemsa.png",
   },
   {
     id: 3,
     name: "Lineicons",
     href: "https://lineicons.com",
-    image: "/images/brands/lineicons.svg",
+    image: "/images/partners/moh.png",
   },
   {
     id: 4,
     name: "GrayGrids",
     href: "https://graygrids.com",
-    image: "/images/brands/graygrids.svg",
+    image: "/images/partners/ucsf.png",
   },
   {
     id: 5,
     name: "TailAdmin",
     href: "https://tailadmin.com",
-    image: "/images/brands/tailadmin.svg",
+    image: "/images/partners/icipe.png",
   },
 ];
 
