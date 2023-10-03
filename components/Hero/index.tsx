@@ -40,7 +40,7 @@ const Hero = () => {
             <div className="absolute inset-0 bg-black opacity-50"></div>
             <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white">
               <h2 className="text-4xl font-bold">{item.title}</h2>
-              <p className="mt-2">{item.description}</p>
+              <p className="mt-2 text-xl">{item.description}</p>
             </div>
           </div>
         </div>
