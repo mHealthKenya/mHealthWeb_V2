@@ -8,7 +8,7 @@ const NewsLatterBox = () => {
         Subscribe to receive future updates and News Letter
       </h3>
       <p className="mb-11 border-b border-body-color border-opacity-25 pb-11 text-base font-medium leading-relaxed text-body-color dark:border-white dark:border-opacity-25">
-        Receive weekly and monthly update of our news letter and publications
+        Receive update of our news letter and publications
       </p>
       <form>
         <input

@@ -11,7 +11,7 @@ const Pricing = () => {
     <section id="pricing" className="relative z-10 py-16 md:py-20 lg:py-28">
       <div className="container">
         <SectionTitle
-          title="Discover the Difference"
+          title="Transforming Your Experience"
           paragraph="Empowering You with Our Service"
           center
           width="665px"

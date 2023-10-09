@@ -1,6 +1,7 @@
 import AboutSectionOne from "@/components/About/AboutSectionOne";
 import AboutSectionTwo from "@/components/About/AboutSectionTwo";
 import Breadcrumb from "@/components/Common/Breadcrumb";
+import Gallery from "@/components/Gallery";
 
 const AboutPage = () => {
   return (
@@ -12,13 +13,19 @@ const AboutPage = () => {
        <div className="2xl:container 2xl:mx-auto lg:py-16 lg:px-20 md:py-12 md:px-6 py-9 px-4">
     <div className="flex lg:flex-row flex-col lg:gap-8 sm:gap-10 gap-12">
         <div className="w-full lg:w-6/12">
-            <h2 className="w-full font-bold lg:text-4xl text-3xl lg:leading-10 dark:text-white leading-9">Our Story</h2>
-            <p className="font-normal text-base leading-6 text-gray-600 dark:text-gray-200 mt-6">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum.In the first place we have granted to God, and by this our present charter confirmed for us and our heirs forever that the English Church shall be free, and shall have her rights entire,</p>
+            <h2 className="w-full font-bold lg:text-4xl text-3xl lg:leading-10 dark:text-white leading-9">Our Mission</h2>
+            <p className="font-normal text-base leading-6 text-gray-600 dark:text-gray-200 mt-6">At our core, we are driven by the commitment to upholding the highest quality and professional standards in all aspects of our work. Our approach extends beyond mere collaboration; we cultivate deep partnerships with our stakeholders, leveraging their expertise to foster innovation and swiftly implement scalable solutions. Our focus lies in the development, implementation, and long-term sustenance of technological advancements that enhance quality of life and improve health outcomes. In tackling the ever-evolving complexities of healthcare challenges, we remain dedicated to offering simple, practical solutions that address the needs of the present while adapting to future demands. Crucially, we embrace honesty, acknowledging and learning from our mistakes, and possess the courage to initiate necessary changes as we continuously strive for excellence.</p>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 lg:gap-12 gap-10 mt-10">
+            <h2 className="font-bold lg:text-4xl text-3xl lg:leading-9 leading-7 text-gray-800 dark:text-white">Our Vision</h2>
+            <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">Preferred innovative global eHealth solutions provider with sustainable impact</p>
+            
+
+            </div>
         </div>
         <div className="w-full lg:w-6/12">
-            <img className="lg:block hidden w-full" src="https://c0.wallpaperflare.com/preview/262/991/578/dna-genetic-material-helix-proteins.jpg" alt="people discussing on board" />
-            <img className="lg:hidden sm:block hidden w-full" src="https://c0.wallpaperflare.com/preview/262/991/578/dna-genetic-material-helix-proteins.jpg" alt="people discussing on board" />
-            <img className="sm:hidden block w-full" src="https://c0.wallpaperflare.com/preview/262/991/578/dna-genetic-material-helix-proteins.jpg" alt="people discussing on board" />
+            <img className="lg:block hidden w-full" src="/assests/images/g6.jpg" alt="people discussing on board" />
+            <img className="lg:hidden sm:block hidden w-full" src="/assests/images/g6.jpg" alt="people discussing on board" />
+            <img className="sm:hidden block w-full" src="/assests/images/g6.jpg" alt="people discussing on board" />
         </div>
     </div>
 
@@ -57,32 +64,9 @@ const AboutPage = () => {
         </div>
     </div>
 
-    <div className="flex lg:flex-row flex-col md:gap-14 gap-16 justify-between lg:mt-20 mt-16">
-        <div className="w-full lg:w-6/12">
-            <h2 className="font-bold lg:text-4xl text-3xl lg:leading-9 leading-7 text-gray-800 dark:text-white">Our Mission</h2>
-            <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">At our core, we are driven by the commitment to upholding the highest quality and professional standards in all aspects of our work. Our approach extends beyond mere collaboration; we cultivate deep partnerships with our stakeholders, leveraging their expertise to foster innovation and swiftly implement scalable solutions. Our focus lies in the development, implementation, and long-term sustenance of technological advancements that enhance quality of life and improve health outcomes. In tackling the ever-evolving complexities of healthcare challenges, we remain dedicated to offering simple, practical solutions that address the needs of the present while adapting to future demands. Crucially, we embrace honesty, acknowledging and learning from our mistakes, and possess the courage to initiate necessary changes as we continuously strive for excellence.</p>
-            
-        </div>
-        
-        <div className="w-full lg:w-6/12">
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 lg:gap-12 gap-10">
-            <h2 className="font-bold lg:text-4xl text-3xl lg:leading-9 leading-7 text-gray-800 dark:text-white">Our Vision</h2>
-            <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">Preferred innovative global eHealth solutions provider with sustainable impact</p>
-                {/* <!-- Team Card --> */}
-                <div className="flex p-4 shadow-md">
-                    <div className="mr-6">
-                       <img className="mr-6"  src="https://tuk-cdn.s3.amazonaws.com/can-uploader/about-us-3-svg4.svg" alt="team card" />
-                    </div>
-                    <div className="">
-                        <p className="font-semibold lg:text-2xl text-xl lg:leading-6 leading-5 text-gray-800 dark:text-white">Team</p>
-                        <p className="mt-2 font-normal text-base leading-6 text-gray-600 dark:text-gray-200">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
+    
 </div>
+<Gallery />
       <AboutSectionOne />
       <AboutSectionTwo />
     </>

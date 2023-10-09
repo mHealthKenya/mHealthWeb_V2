@@ -20,11 +20,12 @@ const AboutSectionTwo = () => {
           </div>
           <div className="w-full px-4 lg:w-1/2">
             <div className="wow fadeInUp max-w-[470px]" data-wow-delay=".2s">
-            <SectionTitle
-                title="Our Core Values"
+           
+               <SectionTitle
+                title="mHealth Tapped industries"
                 paragraph=""
                 mb="44px"
-              />  
+              /> 
 
               <div className="mb-9">
                 <h3 className="mb-4 text-xl font-bold Honesty & Integritytext-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
