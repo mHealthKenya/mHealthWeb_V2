@@ -30,7 +30,7 @@ function Gallery() {
           <img
             alt="gallery"
             className="block h-full w-full rounded-lg object-cover object-center"
-            src="/assests/images/g5.jpg" />
+            src="/assests/images/DSC_7800.JPG" />
         </div>
         <div className="w-1/2 p-1 md:p-2">
           <img
@@ -42,7 +42,7 @@ function Gallery() {
           <img
             alt="gallery"
             className="block h-full w-full rounded-lg object-cover object-center"
-            src="/assests/images/g7.jpg" />
+            src="/assests/images/g9.jpeg" />
         </div>
       </div>
     </div>

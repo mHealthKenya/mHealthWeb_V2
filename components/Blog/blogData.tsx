@@ -3,7 +3,7 @@ import { Blog } from "@/types/blog";
 const blogData: Blog[] = [
   {
     id: 1,
-    title: "CEO's Desk",
+    title: "AI in Health",
     paragraph:
       "I love what I do! Tech innovation is my passion. Having a system developed from an idea and grow to scale while impacting hundreds of thousands of people positively keeps me motivated. I learn from a great mHealth Kenya team and every new project is a new job. It is never a dull moment!",
     image: "/images/blog/blog-01.jpg",
