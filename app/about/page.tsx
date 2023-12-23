@@ -23,9 +23,9 @@ const AboutPage = () => {
             </div>
         </div>
         <div className="w-full lg:w-6/12">
-            <img className="lg:block hidden w-full" src="/assests/images/DSC_7800.JPG" alt="people discussing on board" />
-            <img className="lg:hidden sm:block hidden w-full" src="/assests/images/DSC_7800.JPG" alt="people discussing on board" />
-            <img className="sm:hidden block w-full" src="/assests/images/DSC_7800.JPG" alt="people discussing on board" />
+            <img className="lg:block hidden w-full" src="/assests/images/about.jpeg" alt="people discussing on board" />
+            <img className="lg:hidden sm:block hidden w-full" src="/assests/images/about.jpeg" alt="people discussing on board" />
+            <img className="sm:hidden block w-full" src="/assests/images/about.jpeg" alt="people discussing on board" />
         </div>
     </div>
 

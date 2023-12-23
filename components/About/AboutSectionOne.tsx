@@ -1,5 +1,9 @@
+"use client"
+import React, { useRef, useState } from 'react';
 import Image from "next/image";
 import SectionTitle from "../Common/SectionTitle";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { FreeMode, Pagination } from 'swiper/modules';
 
 const checkIcon = (
   <svg width="16" height="13" viewBox="0 0 16 13" className="fill-current">
@@ -17,17 +21,19 @@ const AboutSectionOne = () => {
     </p>
   );
 
+
+
   return (
     <section id="about" className="pt-16 md:pt-20 lg:pt-28">
       <div className="container">
         <div className="border-b border-body-color/[.15] pb-16 dark:border-white/[.15] md:pb-20 lg:pb-28">
           <div className="-mx-4 flex flex-wrap items-center">
             <div className="w-full px-4 lg:w-1/2">
-            <SectionTitle
+              <SectionTitle
                 title="Our Core Values"
                 paragraph=""
                 mb="44px"
-              />  
+              />
 
               <div
                 className="wow fadeInUp mb-12 max-w-[570px] lg:mb-0"
@@ -55,7 +61,7 @@ const AboutSectionOne = () => {
                 data-wow-delay=".2s"
               >
                 <Image
-                  src="/images/about/about-image.svg"
+                  src="/assests/images/team.jpeg"
                   alt="about-image"
                   fill
                   className="mx-auto max-w-full lg:mr-0"

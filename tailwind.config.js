@@ -46,6 +46,17 @@ module.exports = {
         one: "0px 2px 3px rgba(7, 7, 77, 0.05)",
         sticky: "inset 0 -1px 0 0 rgba(0, 0, 0, 0.1)",
       },
+      animation: {
+        ["infinite-slider"]: "infiniteSlider 20s linear infinite",
+      },
+      keyframes: {
+        infiniteSlider: {
+          "0%": { transform: "translateX(0)" },
+          "100%": {
+            transform: "translateX(calc(-250px * 5))",
+          },
+        },
+      },
     },
   },
   plugins: [],

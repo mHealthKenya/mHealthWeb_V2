@@ -5,32 +5,32 @@ import SectionTitle from "../Common/SectionTitle";
 const brandsData: Brand[] = [
   {
     id: 1,
-    name: "UIdeck",
-    href: "https://uideck.com",
+    name: "IFA",
+    href: "https://ifa.co.ke/",
     image: "/images/partners/ifa.png",
   },
   {
     id: 2,
-    name: "Tailgrids",
-    href: "https://tailgrids.com",
+    name: "KEMSA",
+    href: "https://www.kemsa.go.ke/",
     image: "/images/partners/kemsa.png",
   },
   {
     id: 3,
-    name: "Lineicons",
-    href: "https://lineicons.com",
-    image: "/images/partners/moh.png",
+    name: "Ministry Of Health Kenya",
+    href: "https://www.health.go.ke/",
+    image: "/assests/images/partners/moh.png",
   },
   {
     id: 4,
-    name: "GrayGrids",
-    href: "https://graygrids.com",
-    image: "/images/partners/ucsf.png",
+    name: "UCSF",
+    href: "https://www.ucsfhealth.org/",
+    image: "/assests/images/partners/ucsf.png",
   },
   {
     id: 5,
-    name: "TailAdmin",
-    href: "https://tailadmin.com",
+    name: "ICIPE",
+    href: "http://www.icipe.org/",
     image: "/images/partners/icipe.png",
   },
 ];
@@ -40,40 +40,49 @@ const Brands = () => {
     <>
     <section className="pt-16">
       <div className="container">
-        <div className="-mx-4 flex flex-wrap">
-          <div className="w-full px-4">
-            <div
-              className="wow fadeInUp flex flex-wrap items-center justify-center rounded-md bg-dark py-8 px-8 dark:bg-primary dark:bg-opacity-5 sm:px-10 md:py-[40px] md:px-[50px] xl:p-[50px] 2xl:py-[60px] 2xl:px-[70px]"
-              data-wow-delay=".1s
-              "
-            >
-              {brandsData.map((brand) => (
-                <SingleBrand key={brand.id} brand={brand} />
-              ))}
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+        <SectionTitle
+          title="Our Partners"
+          paragraph=""
+          center
+          mb="80px"
+        />
+
+        <div className="relative m-auto w-full overflow-hidden bg-white before:absolute before:left-0 before:top-0 before:z-[2] before:h-full before:w-[50px] before:bg-[linear-gradient(to_right,white_0%,rgba(255,255,255,0)_100%)] before:content-[''] after:absolute after:right-0 after:top-0 after:z-[2] after:h-full after:w-[50px] after:bg-[linear-gradient(to_right,white_0%,rgba(255,255,255,0)_100%)] after:content-['']">
+          <div className="slider-container animate-infinite-slider flex">
+            {brandsData.map((brand, index) => (
+              <SingleBrand key={brand.id} brand={brand} />
+            ))}
+            {brandsData.map((brand, index) => (
+              <SingleBrand key={brand.id} brand={brand} />
+            ))}
             
-    <section className="pt-16">
-    {/* <SectionTitle title="Our Awards" paragraph="" /> */}
-      <div className="container">
-        <div className="-mx-4 flex flex-wrap">
-          <div className="w-full px-4">
-            <div
-              className="wow fadeInUp flex flex-wrap items-center justify-center rounded-md bg-dark py-8 px-8 dark:bg-primary dark:bg-opacity-5 sm:px-10 md:py-[40px] md:px-[50px] xl:p-[50px] 2xl:py-[60px] 2xl:px-[70px]"
-              data-wow-delay=".1s
-              "
-            >
-              {brandsData.map((brand) => (
-                <SingleBrand key={brand.id} brand={brand} />
-              ))}
-            </div>
           </div>
         </div>
       </div>
     </section>
+    
+    {/* <section className="pt-16">
+      <div className="container">
+        <SectionTitle
+          title="Awards"
+          paragraph=""
+          center
+          mb="80px"
+        />
+
+        <div className="relative m-auto w-full overflow-hidden bg-white before:absolute before:left-0 before:top-0 before:z-[2] before:h-full before:w-[50px] before:bg-[linear-gradient(to_right,white_0%,rgba(255,255,255,0)_100%)] before:content-[''] after:absolute after:right-0 after:top-0 after:z-[2] after:h-full after:w-[50px] after:bg-[linear-gradient(to_right,white_0%,rgba(255,255,255,0)_100%)] after:content-['']">
+          <div className="slider-container animate-infinite-slider flex">
+            {brandsData.map((brand, index) => (
+              <SingleBrand key={brand.id} brand={brand} />
+            ))}
+            {brandsData.map((brand, index) => (
+              <SingleBrand key={brand.id} brand={brand} />
+            ))}
+          </div>
+        </div>
+      </div>
+    </section> */}
+    
     </>
     
   );
@@ -90,7 +99,7 @@ const SingleBrand = ({ brand }: { brand: Brand }) => {
         href={href}
         target="_blank"
         rel="nofollow noreferrer"
-        className="relative h-10 w-full opacity-70 grayscale transition hover:opacity-100 hover:grayscale-0 dark:opacity-60 dark:hover:opacity-100"
+        className="relative h-10 w-full   transition hover:opacity-100  "
       >
         <Image src={image} alt={name} fill />
       </a>
