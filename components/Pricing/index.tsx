@@ -21,7 +21,6 @@ const Pricing = () => {
         <div className="grid grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-2 lg:grid-cols-3">
           <PricingBox
             price="Software Development"
-            // eslint-disable-next-line react/no-children-prop
             subtitle="We conceptualize, develop, and deliver on cutting edge solutions based on clients needs." children={""}          >
           </PricingBox>
           <PricingBox
