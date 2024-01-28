@@ -21,7 +21,8 @@ const Pricing = () => {
         <div className="grid grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-2 lg:grid-cols-3">
           <PricingBox
             price="Software Development"
-            subtitle="We conceptualize, develop, and deliver on cutting edge solutions based on clients needs." children={""}          >
+            subtitle="We conceptualize, develop, and deliver on cutting edge solutions based on clients needs."         >
+              <></>
           </PricingBox>
           <PricingBox
             price="Monitoring & Evaluation"
@@ -29,22 +30,26 @@ const Pricing = () => {
 
             We also extend our vast experience to our partners by providing our monitoring and evaluation consultancy services. ."
           >
+            <></>
           </PricingBox>
           <PricingBox
             price="
             software as a service"
             subtitle="We have developed market disruptive software that can be used to handle your day to day business activities at the comfort of your computer, smartphone, tablet or even your generic devices. "
           >
+            <></>
           </PricingBox>
           <PricingBox
             price="Research"
             subtitle="We innovate to solve problems and we develop to chase after perfection and excellence. Our research team is dedicated to coming up with disruptive research ideas that are translated into innovative solutions."
           >
+            <></>
           </PricingBox>
           <PricingBox
             price="Consulting"
             subtitle="We provide around the close consultancy on the topics of software development, digital health, e-health policies and public private partnerships. "
           >
+            <></>
           </PricingBox>
         </div>
       </div>
