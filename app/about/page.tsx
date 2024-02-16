@@ -2,6 +2,7 @@ import AboutSectionOne from "@/components/About/AboutSectionOne";
 import AboutSectionTwo from "@/components/About/AboutSectionTwo";
 import Breadcrumb from "@/components/Common/Breadcrumb";
 import Gallery from "@/components/Gallery";
+import Team from "@/components/Team";
 
 const AboutPage = () => {
   return (
@@ -66,6 +67,7 @@ const AboutPage = () => {
 
     
 </div>
+    <Team />
 <Gallery />
       <AboutSectionOne />
       <AboutSectionTwo />

@@ -11,28 +11,48 @@ const Contact = () => {
   const [email, setEmail] = useState('');
   const [subject, setSubject] = useState('');
   const [message, setMessage] = useState('');
+  const [sending, setSending] = useState(false);
 
-  
 
-  const handleSubmit = (e) => {
-    e.preventDefault(); 
-    
-    try {
-        if (name === "" || email === "" || message === "" || subject === "") { 
-            alert('Please fill in all the inputs');
+
+function handleSubmit(event) {
+    event.preventDefault();
+
+    setSending(true);
+
+    const data = {
+        access_token: "lcfwnmn9dz44zacawv4l5spg",
+        subject: subject,
+        text: name + '\n\n' +  email + '\n\n' + message
+    };
+
+    fetch("https://postmail.invotes.com/send", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/x-www-form-urlencoded"
+        },
+        body: new URLSearchParams(data)
+    })
+    .then(response => {
+        if (response.ok) {
+            return response.json();
         } else {
-            resend.emails.send({
-                from: email,
-                to: 'aguyo@mhealthkenya.org',
-                subject: subject,
-                html: `<p>Congrats on sending your <strong>${name}</strong>!</p>`
-            });
-            alert('Email sent successfully!');
+            throw new Error('Email could not be sent.');
         }
-    } catch (error) {
-        console.log(`Error: ${error}`);
-        alert('Email Not sent Error!!!');
-    }
+    })
+    .then(data => {
+        // Handle success
+        console.log('Email sent successfully:', data);
+        // Redirect or show a success message
+    })
+    .catch(error => {
+        // Handle error
+        console.error('Error sending email:', error);
+        // Redirect or show an error message
+    })
+    .finally(() => {
+        setSending(false);
+    });
 }
 
 
@@ -126,8 +146,10 @@ const Contact = () => {
                     </div>
                   </div>
                   <div className="w-full px-4">
-                    <button type="submit" className="rounded-md bg-primary py-4 px-9 text-base font-medium text-white transition duration-300 ease-in-out hover:bg-opacity-80 hover:shadow-signUp">
-                      Submit 
+                    <button type="submit"
+                    disabled={sending}
+                    className="rounded-md bg-primary py-4 px-9 text-base font-medium text-white transition duration-300 ease-in-out hover:bg-opacity-80 hover:shadow-signUp">
+                      {sending ? 'Sending...' : 'Send'}
                     </button>
                   </div>
                 </div>
