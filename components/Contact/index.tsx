@@ -42,12 +42,12 @@ function handleSubmit(event) {
     })
     .then(data => {
         // Handle success
-        console.log('Email sent successfully:', data);
+        alert('Email sent successfully');
         // Redirect or show a success message
     })
     .catch(error => {
         // Handle error
-        console.error('Error sending email:', error);
+        alert('Error sending email');
         // Redirect or show an error message
     })
     .finally(() => {

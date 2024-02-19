@@ -32,7 +32,7 @@ const AboutSectionTwo = () => {
       />
     </div>
 
-    <section className="py-16 md:py-20 lg:py-28 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+    <section className="py-16 md:py-20 lg:py-28 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mr-10 ml-10">
       {data.map((item, index) => (
         <div key={index} className="relative flex flex-col mt-6 text-gray-700 dark:bg-[#1D2144] shadow-md bg-clip-border rounded-xl max-w-xs mx-auto md:max-w-md lg:max-w-full">
           <div className="p-6">
@@ -43,7 +43,7 @@ const AboutSectionTwo = () => {
               {item.description}
             </p>
           </div>
-          <div className="p-6 pt-0">
+          {/* <div className="p-6 pt-0">
             <a href="#" className="inline-block">
               <button
                 className="flex items-center gap-2 px-4 py-2 font-sans text-xs font-bold text-center text-gray-900 uppercase align-middle transition-all rounded-lg select-none disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none hover:bg-gray-900/10 active:bg-gray-900/20 bg-color"
@@ -52,7 +52,7 @@ const AboutSectionTwo = () => {
                 Read More
               </button>
             </a>
-          </div>
+          </div> */}
         </div>
       ))}
     </section>

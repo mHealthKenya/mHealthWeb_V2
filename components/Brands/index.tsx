@@ -38,7 +38,7 @@ const brandsData: Brand[] = [
 const Brands = () => {
   return (
     <>
-    <section className="pt-16">
+    <section className="pt-16 mb-10">
       <div className="container">
         <SectionTitle
           title="Our Partners"
